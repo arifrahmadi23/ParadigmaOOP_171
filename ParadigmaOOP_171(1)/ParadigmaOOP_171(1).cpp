@@ -1,4 +1,4 @@
-#include <iosteam>
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -10,6 +10,13 @@ private:
 
 public:
 	mahasiswa(int pId, string pNama, float pNilai) :id(pId), nama(pNama), nilai(pNilai) { // member ini
+
+	}
+
+	~mahasiswa() {
+		cout << "Id		= " << id << endl;
+		cout << "Nama	= " << nama << endl;
+		cout << "Nilai	= " << nilai << endl;
 
 	}
 };
